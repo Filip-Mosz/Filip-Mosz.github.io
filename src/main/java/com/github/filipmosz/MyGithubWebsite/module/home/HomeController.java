@@ -12,13 +12,9 @@ public class HomeController {
 
     Map<String, String> attributes = new HashMap<>();
 
-    @RequestMapping("/")
+    @RequestMapping("/home")
     public String getHome(Model model) {
-        attributes.put("siteName", "bestmix");
-        attributes.put("siteDesc", "home.desc");
-        attributes.put("siteContent", "content.home");
 
-        model.addAllAttributes(attributes);
         return "index";
     }
 
